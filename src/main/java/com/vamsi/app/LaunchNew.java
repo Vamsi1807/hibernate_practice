@@ -28,6 +28,8 @@ public class LaunchNew {
             stu.setCity("Mutukuru");
 
             session.persist(stu);
+            
+            //session.update()....to update existing record using same id of object    saveOrUpdate(), merge()
 
             tr.commit(); // Commit the transaction if everything is successful
             flag = true;
