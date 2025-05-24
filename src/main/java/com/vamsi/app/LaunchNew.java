@@ -30,6 +30,8 @@ public class LaunchNew {
             session.persist(stu);
             
             //session.update()....to update existing record using same id of object    saveOrUpdate(), merge()
+            
+            //to delete, create the existing data as an object, use session.remove(obj)
 
             tr.commit(); // Commit the transaction if everything is successful
             flag = true;
